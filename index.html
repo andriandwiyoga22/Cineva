@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./src/assets/Cineva.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/assets/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- NAVBAR -->
+        <div class="container-nav">
+            <div class="navbar-title">
+                <img src="./src/assets/Cineva.png">
+                <h2 class="cineva" onclick="scrollToContent()" style="opacity: 0.7;">ineva</h2>
+
+            </div>
+            <div class="navbar">
+                <div class="container-search">
+                    <input type="text" id="search" class="btn" autocomplete="off" autofocus>
+                    <button class="search-btn" onclick="searchMovies()">Search</button>
+                </div>
+                <button class="btn" onclick="scrollToContent()">Movies</button>
+                <button class="btn" onclick="alert('Halo! Happy Watch Movie')">Notification</button>
+                <button class="btn" onclick="alert('Error #404')">Sign-in</button>
+            </div>
+        </div>
+
+        <!-- HEADER -->
+        <div class="container-header">
+            <!-- CONTROLLER -->
+        </div>
+
+        <!-- CONTENT -->
+        <div class="container-content">
+            <div class="opsional">
+                <button class="btn-ops" id="all" onclick="scrollToContent()">ALL</button>
+                <button class="btn-ops" id="action" onclick="scrollToContent()">ACTION</button>
+                <button class="btn-ops" id="comedy" onclick="scrollToContent()">COMEDY</button>
+                <button class="btn-ops" id="drama" onclick="scrollToContent()">DRAMA</button>
+                <button class="btn-ops" id="horror" onclick="scrollToContent()">HORROR</button>
+                <button class="btn-ops" id="romance" onclick="scrollToContent()">ROMANCE</button>
+            </div>
+            <div class="content-hero">
+                <div class="show">
+                    <p class="title">TRENDING NOW</p>
+                    <h5 id="show-all1" onclick="scrollToContent()">SHOW ALL ></h5>
+                </div>
+                <div class="card-list" id="card-list1">
+                    <!-- CONTROLLER -->
+                </div>
+                <div class="show">
+                    <p class="title">NEW RELEASE</p>
+                    <h5 id="show-all2">SHOW ALL ></h5>
+                </div>
+                <div class="card-list" id="card-list2">
+                    <!-- CONTROLLER -->
+                </div>
+
+
+            </div>
+        </div>
+        <div class="hero-detail">
+            <div class="container-detail">
+
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+        <div class="hero-footer">
+            <div class="container-footer">
+                <div>
+                    <h3>Stream</h3>
+                    <div style="display: flex; flex-direction: column;">
+                        <a href="#"
+                            style="padding-top: 7px; text-decoration: none; color: rgba(0, 0, 0, 0.7); color: rgba(255, 255, 255, 0.7);">Home</a>
+                        <a href="#search"
+                            style="padding-top: 7px; text-decoration: none; color: rgba(0, 0, 0, 0.7); color: rgba(255, 255, 255, 0.7);">Search</a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Discover</h3>
+                    <div style="display: flex; flex-direction: column;">
+                        <p onclick="scrollToContent()">Movies</p>
+                        <a href="#"
+                            style="padding-top: 7px; text-decoration: none; color: rgba(0, 0, 0, 0.7); color: rgba(255, 255, 255, 0.7);">Notification</a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Support</h3>
+                    <div>
+                        <p>Help Center</p>
+                        <p>Terms of Use</p>
+                    </div>
+                </div>
+                <div>
+                    <h3>Connect</h3>
+                    <div style="display: flex; flex-direction: column; padding-left: 20px;">
+                        <a href="https://www.instagram.com/andynnda_" target="_blank"><img
+                                src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000"
+                                style="width: 30px; cursor: pointer;"></a>
+                        <a href="https://wa.me/6281772843758" target="_blank"><img
+                                src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000"
+                                style="width: 30px; cursor: pointer;"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>©2026 Tmdb, All right reserved</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="module" src="./src/services/script.js"></script>
+
+</html>     </div>
+        </div>
+    </div>
+
+</body>
+<script type="module" src="./src/services/script.js"></script>
+
+</html>
