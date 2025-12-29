@@ -47,7 +47,7 @@ export default async function backDrop() {
                                 oldSlide.classList.add('exit');
 
                                 // Hapus slide lama setelah animasi geser keluar selesai
-                                setTimeout(() => oldSlide.remove(), 1500);
+                                setTimeout(() => oldSlide.remove(), 500);
                             }
 
                             // Slide baru geser masuk

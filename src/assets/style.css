@@ -134,7 +134,7 @@ html {
 
     /* Mulai dari luar layar kiri */
     transform: translateX(-100%);
-    transition: transform 1.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .header.no-transition {
@@ -367,4 +367,128 @@ html {
     font-size: 14px;
     padding: 5px 0px 15px;
     cursor: default;
+}
+
+
+
+
+/* RESPONSIVE STYLE FOR PHONE (Max-width: 768px) */
+@media screen and (max-width: 768px) {
+    
+    /* 1. NAVBAR MOBILE */
+    .container-nav {
+        max-width: 95%;
+        left: 2.5%;
+        padding: 5px 15px;
+        flex-direction: column; /* Menumpuk logo dan search */
+        gap: 10px;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .navbar {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .container-search {
+        width: 100%; /* Search bar penuh di mobile */
+        margin-bottom: 5px;
+    }
+
+    #search {
+        width: 70%;
+    }
+
+    /* 2. HEADER/HERO MOBILE */
+    .container-header {
+        margin: 120px 15px 0px 15px; /* Margin lebih kecil */
+        height: 50vh; /* Tinggi lebih pendek di mobile */
+    }
+
+    .header-hero {
+        left: 1.5rem;
+        bottom: 1.5rem;
+        max-width: 90%;
+    }
+
+    .header-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-play {
+        padding: 10px 40px;
+        width: 100%; /* Tombol lebar penuh agar mudah diklik */
+    }
+
+    /* 3. CONTENT & GRID MOBILE */
+    .container-content {
+        margin: 20px 15px;
+    }
+
+    .opsional {
+        gap: 10px;
+        overflow-x: auto; /* Bisa di-scroll menyamping jika tombol banyak */
+        padding-bottom: 10px;
+    }
+
+    .btn-ops {
+        padding: 8px 20px;
+        white-space: nowrap;
+    }
+
+    .card-list {
+        /* Mengubah grid menjadi 2 kolom di mobile */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+
+    .card-img {
+        width: 100%; /* Gambar mengikuti lebar kolom */
+        height: auto;
+        aspect-ratio: 2/3;
+    }
+
+    /* 4. DETAIL CARD MOBILE */
+    .detail-card {
+        flex-direction: column;
+        width: 90%;
+        left: 5%;
+        top: 5%;
+        height: 90vh;
+        overflow-y: auto;
+    }
+
+    .background-detail {
+        width: 100%;
+        height: 250px;
+    }
+
+    .text-detail {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .play-detail {
+        position: relative;
+        top: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    /* 5. FOOTER MOBILE */
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
