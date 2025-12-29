@@ -165,7 +165,6 @@ html {
 
 
     transition: opacity 0.3s ease;
-    /* Opsional: beri transisi halus */
 }
 
 .header-hero h4 {
@@ -184,7 +183,6 @@ html {
 /* CONTENT STYLE */
 #contentHero {
     min-height: 2000px;
-    /* Sesuaikan dengan perkiraan tinggi konten */
 }
 
 .container-content {
@@ -380,15 +378,14 @@ html {
 
 
 
-/* RESPONSIVE STYLE FOR PHONE (Max-width: 768px) */
+/* RESPONSIVE STYLE FOR PHONE */
 @media screen and (max-width: 768px) {
 
-    /* 1. NAVBAR MOBILE */
+    /* NAVBAR MOBILE STYLE */
     .container-nav {
         max-width: 95%;
         left: 2.5%;
         padding: 5px 15px;
-        /* Menumpuk logo dan search */
         gap: 10px;
         height: auto;
         border-radius: 15px;
@@ -405,7 +402,6 @@ html {
 
     .container-search {
         width: 100%;
-        /* Search bar penuh di mobile */
         margin-bottom: 5px;
     }
 
@@ -417,11 +413,10 @@ html {
         display: none;
     }
 
-    /* 2. HEADER/HERO MOBILE */
+    /* HEADER STYLE MOBILE */
     .container-header {
         position: relative;
         margin: 120px 15px 0px 15px;
-        /* Margin lebih kecil */
         height: 50vh;
         /* Tinggi lebih pendek di mobile */
     }
@@ -442,10 +437,9 @@ html {
         margin-bottom: 5px;
         padding: 8px 40px;
         width: 100%;
-        /* Tombol lebar penuh agar mudah diklik */
     }
 
-    /* 3. CONTENT & GRID MOBILE */
+    /* 3. CONTENT MOBILE STYLE */
     .container-content {
         margin: 20px 15px;
     }
@@ -475,7 +469,7 @@ html {
         aspect-ratio: 2/3;
     }
 
-    /* 4. DETAIL CARD MOBILE */
+    /* 4. DETAIL CARD MOBILE STYLE */
     .detail-card {
         flex-direction: column;
         width: 90%;
@@ -515,7 +509,7 @@ html {
         left: 20rem;
     }
 
-    /* 5. FOOTER MOBILE */
+    /* 5. FOOTER MOBILE STYLE */
     .container-footer {
         flex-direction: column;
         align-items: center;
