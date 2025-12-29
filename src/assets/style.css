@@ -488,7 +488,7 @@ html {
 
     .background-detail {
         width: 100%;
-        height: 100rem;
+        height: 100%;
     }
 
     .text-detail {
@@ -502,7 +502,7 @@ html {
 
     .play-detail {
         max-width: 90%;
-        margin-top: 60%;
+        margin-top: 50%;
         width: 100%;
     }
 
