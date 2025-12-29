@@ -361,6 +361,12 @@ html {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.connect {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
 .copyright {
     color: white;
     text-align: center;
@@ -374,13 +380,13 @@ html {
 
 /* RESPONSIVE STYLE FOR PHONE (Max-width: 768px) */
 @media screen and (max-width: 768px) {
-    
+
     /* 1. NAVBAR MOBILE */
     .container-nav {
         max-width: 95%;
         left: 2.5%;
         padding: 5px 15px;
-        flex-direction: column; /* Menumpuk logo dan search */
+        /* Menumpuk logo dan search */
         gap: 10px;
         height: auto;
         border-radius: 15px;
@@ -392,23 +398,28 @@ html {
     }
 
     .container-search {
-        width: 100%; /* Search bar penuh di mobile */
+        width: 100%;
+        /* Search bar penuh di mobile */
         margin-bottom: 5px;
     }
 
     #search {
-        width: 70%;
+        width: 69%;
     }
 
     /* 2. HEADER/HERO MOBILE */
     .container-header {
-        margin: 120px 15px 0px 15px; /* Margin lebih kecil */
-        height: 50vh; /* Tinggi lebih pendek di mobile */
+        position: relative;
+        margin: 120px 15px 0px 15px;
+        /* Margin lebih kecil */
+        height: 50vh;
+        /* Tinggi lebih pendek di mobile */
     }
 
     .header-hero {
+        position: absolute;
         left: 1.5rem;
-        bottom: 1.5rem;
+        top: 23rem;
         max-width: 90%;
     }
 
@@ -417,8 +428,10 @@ html {
     }
 
     .btn-play {
-        padding: 10px 40px;
-        width: 100%; /* Tombol lebar penuh agar mudah diklik */
+        margin-bottom: 5px;
+        padding: 15px 40px;
+        width: 100%;
+        /* Tombol lebar penuh agar mudah diklik */
     }
 
     /* 3. CONTENT & GRID MOBILE */
@@ -428,7 +441,8 @@ html {
 
     .opsional {
         gap: 10px;
-        overflow-x: auto; /* Bisa di-scroll menyamping jika tombol banyak */
+        overflow-x: auto;
+        /* Bisa di-scroll menyamping jika tombol banyak */
         padding-bottom: 10px;
     }
 
@@ -439,12 +453,13 @@ html {
 
     .card-list {
         /* Mengubah grid menjadi 2 kolom di mobile */
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
 
     .card-img {
-        width: 100%; /* Gambar mengikuti lebar kolom */
+        width: 100%;
+        /* Gambar mengikuti lebar kolom */
         height: auto;
         aspect-ratio: 2/3;
     }
@@ -459,24 +474,33 @@ html {
         overflow-y: auto;
     }
 
+    .detail-card img {
+        display: none;
+    }
+
     .background-detail {
         width: 100%;
-        height: 250px;
+        height: 100rem;
     }
 
     .text-detail {
         position: relative;
         left: 0;
         bottom: 0;
+        margin-top: 100px;
         padding: 20px;
         max-width: 100%;
     }
 
     .play-detail {
-        position: relative;
-        top: 0;
-        margin-top: 20px;
+        margin-top: 450px;
         width: 100%;
+    }
+
+    .close-detail {
+        position: absolute;
+        top: 2rem;
+        left: 33rem;
     }
 
     /* 5. FOOTER MOBILE */
@@ -486,9 +510,8 @@ html {
         text-align: center;
         gap: 20px;
     }
-}
 
-img {
-    max-width: 100%;
-    height: auto;
+    .connect {
+        padding-left: 0;
+    }
 }
