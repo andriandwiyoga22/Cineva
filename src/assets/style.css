@@ -426,7 +426,7 @@ html {
     .header-hero {
         position: absolute;
         left: 1.5rem;
-        top: 10rem;
+        top: 12rem;
         max-width: 90%;
     }
 
@@ -501,7 +501,7 @@ html {
 
     .play-detail {
         max-width: 330px;
-        margin-top: 180px;
+        margin-top: 170px;
         width: 100%;
     }
 
