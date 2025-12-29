@@ -31,7 +31,7 @@ export default async function backDrop() {
                     newSlide.innerHTML = `
                     <div class="header-hero">
                         <h1>${item.title}</h1>
-                        <h4>${item.overview.substring(0, 150)}...</h4>
+                        <h4>${item.overview.substring(0, 130)}...</h4>
                         <button class="btn-play" onClick="playNow(${item.id})">play now</button>
                         <button class="btn-play" onClick="showMovieDetail(${item.id})">detail info</button>
                     </div>`;
