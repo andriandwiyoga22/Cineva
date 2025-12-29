@@ -80,11 +80,14 @@ html {
     width: 20rem;
     height: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+        justify-content: space-around;
+        gap: 0;
 }
 
 #search {
     cursor: default;
-    margin: 2px 0px 2px 2px;
+    margin: 2px 2px;
     width: 241px;
     padding: 0 5px 0 5px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -98,7 +101,7 @@ html {
 .search-btn {
     cursor: pointer;
     color: white;
-    margin: 2px 0px 2px 2px;
+    margin: 2px 2px;
     width: 4.6rem;
     background-color: rgb(234, 29, 29);
     border: none;
@@ -426,7 +429,7 @@ html {
     .header-hero {
         position: absolute;
         left: 1.5rem;
-        top: 40%;
+        top: 39.5%;
         max-width: 90%;
         font-size: 10px;
     }

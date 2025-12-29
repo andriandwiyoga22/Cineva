@@ -30,7 +30,7 @@ export default async function backDrop() {
                     newSlide.style.backgroundImage = `url(${backdropPath})`;
                     newSlide.innerHTML = `
                     <div class="header-hero">
-                        <h1>${item.title.substring(0, 30)}</h1>
+                        <h1>${item.title.substring(0, 22)}</h1>
                         <h4>${item.overview.substring(0, 130)}...</h4>
                         <button class="btn-play" onClick="playNow(${item.id})">play now</button>
                         <button class="btn-play" onClick="showMovieDetail(${item.id})">detail info</button>
